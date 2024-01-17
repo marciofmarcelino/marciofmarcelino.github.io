@@ -36,3 +36,19 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+/* Adicione estilos personalizados aqui */
+.whatsapp-icon {
+  font-size: 30px; /* Tamanho do ícone */
+  background-color: #f4f4f4; /* Cor de fundo */
+  color: #25d366; /* Cor do ícone */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 10%; /* Bordas arredondadas para criar um círculo */
+  text-decoration: none; /* Remover sublinhado do link */
+  display: inline-block; /* Permite ajustar o tamanho do contêiner */
+  position: fixed;
+  bottom: 75px;
+  right: 20px;
+
+}
