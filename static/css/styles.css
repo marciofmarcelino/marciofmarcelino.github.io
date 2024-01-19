@@ -19,7 +19,7 @@ header {
     margin: 20px;
 }
 
-.project {
+.card-project {
     background-color: #fff;
     padding: 20px;
     margin: 10px;
@@ -38,17 +38,51 @@ footer {
 }
 
 
+.link-ver_mais{
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* Cor padrão */
+}
+
+.link-ver_mais:visited {
+    color: rgb(0, 0, 0); /* Cor para links visitados */
+}
+
+.link-ver_mais:hover {
+
+    color: rgb(5, 128, 250); /* Cor quando o mouse passa por cima */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Adicione estilos personalizados aqui */
 .whatsapp-icon {
   font-size: 30px; /* Tamanho do ícone */
   background-color: #f4f4f4; /* Cor de fundo */
-  color: #25d366; /* Cor do ícone */
+  color:#128c7e ; /* Cor do ícone */
   padding: 15px; /* Espaçamento interno */
   border-radius: 10%; /* Bordas arredondadas para criar um círculo */
   text-decoration: none; /* Remover sublinhado do link */
   display: inline-block; /* Permite ajustar o tamanho do contêiner */
   position: fixed;
-  bottom: 75px;
+  bottom: 25px;
   right: 20px;
 
+}
+
+.whatsapp-icon:hover {
+    color: #25d366;
 }
