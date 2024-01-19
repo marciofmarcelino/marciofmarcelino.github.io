@@ -12,6 +12,48 @@ header {
     padding: 20px;
 }
 
+#menu {
+    display: none;
+    position: absolute;
+    top: 60px; /* Ajuste conforme necessário para evitar sobreposição com o cabeçalho */
+    left: 0;
+    background-color: #333;
+    width: 100%;
+}
+  
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+#menu li {
+    padding: 10px;
+}
+  
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+  
+.hidden {
+    display: none;
+}
+  
+#menu-icon,
+#close-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 .projects {
     display: flex;
     justify-content: space-around;
