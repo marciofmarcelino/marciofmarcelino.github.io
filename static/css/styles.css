@@ -13,8 +13,10 @@ header {
 }
 
 .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+
 }
 
 
@@ -23,7 +25,7 @@ header {
 #menu {
     display: none;
     position: absolute;
-    top: 60px; /* Ajuste conforme necessário para evitar sobreposição com o cabeçalho */
+    top: 20px; /* Ajuste conforme necessário para evitar sobreposição com o cabeçalho */
     left: 0;
     background-color: #333;
     width: 25vh;
@@ -81,6 +83,7 @@ header {
 
 
 .projects {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -95,15 +98,26 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
+
+.container-icons{
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
+
+
+.icon{
+    background-color: #f4f4f4;
+    padding: 40px;
+    margin: 40px;
+    border-radius: 5px;
+   
+}
+
+
 
 
 .link-ver_mais{
@@ -119,11 +133,6 @@ footer {
 
     color: rgb(5, 128, 250); /* Cor quando o mouse passa por cima */
 }
-
-
-
-
-
 
 
 
@@ -153,4 +162,16 @@ footer {
 
 .whatsapp-icon:hover {
     color: #25d366;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

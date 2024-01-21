@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
 function toggleBlur() {
   var content = document.getElementsByClassName('container');
   var excecao = document.querySelector('.header');
