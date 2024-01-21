@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
   
     menuIcon.addEventListener('click', function () {
-      aplicarBlur();
+      toggleBlur();
       menu.style.display = 'block';
       menuIcon.style.display = 'none';
       closeIcon.style.display = 'block';
@@ -13,38 +13,30 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     closeIcon.addEventListener('click', function () {
-      removerBlur();
+      toggleBlur();
       menu.style.display = 'none';
       menuIcon.style.display = 'block';
       closeIcon.style.display = 'none';
     });
   });
-  
 
-function aplicarBlur() {
+
+
+
+
+
+function toggleBlur() {
   var content = document.getElementsByClassName('container');
   var excecao = document.querySelector('.header');
 
-  if (content.length > 0) {
+
+  for (var i=0; i<content.length; i++) {
+    if (content[i] !== excecao) {
+      content[i].style.filter = content[i].style.filter ==='blur(5px)' ? 'none' : 'blur(5px)';
+    }
     
-    for (var i=0; i<content.length; i++) {
-      if (content[i] !== excecao) {
-        content[i].style.filter = 'blur(5px)';
-      }
-      
-    }
-  }
-  
-};
-
-function removerBlur(){
-  var content = document.getElementsByClassName('container');
-
-  if (content.length > 0) {
-
-    for (var i=0; i<content.length; i++) {
-      content[i].style.filter = 'none';
-    }
   }
 
 };
+
+
