@@ -12,15 +12,41 @@ header {
     padding: 20px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
 #menu {
     display: none;
     position: absolute;
     top: 60px; /* Ajuste conforme necessário para evitar sobreposição com o cabeçalho */
     left: 0;
     background-color: #333;
-    width: 100%;
+    width: 25vh;
+    height: 100vh;
+    animation-name: slidein;
+    animation-duration: 2s;
+    z-index: 1;
 }
   
+@keyframes slidein {
+    from{
+        margin-left: 0;
+        width: 10vh;
+    }
+
+    to {
+        margin-left:0;
+        width: 25vh;
+    }
+}
+
+
+
 #menu ul {
     list-style: none;
     padding: 0;
