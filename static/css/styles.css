@@ -37,8 +37,8 @@ header {
     font-weight: bold;
 }
   
-.hidden {
-    display: none;
+#close-icon{
+  display: none;
 }
   
 #menu-icon,

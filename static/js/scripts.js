@@ -5,14 +5,15 @@ document.addEventListener('DOMContentLoaded', function () {
   
     menuIcon.addEventListener('click', function () {
       menu.style.display = 'block';
-      menuIcon.classList.add('hidden');
-      closeIcon.classList.remove('hidden');
+      menuIcon.style.display = 'none';
+      closeIcon.style.display = 'block';
+      
     });
   
     closeIcon.addEventListener('click', function () {
       menu.style.display = 'none';
-      menuIcon.classList.remove('hidden');
-      closeIcon.classList.add('hidden');
+      menuIcon.style.display = 'block';
+      closeIcon.style.display = 'none';
     });
   });
   
